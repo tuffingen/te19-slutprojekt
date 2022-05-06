@@ -3,9 +3,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
+require('dotenv').config();
+const nunjucks = require('nunjucks');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var nootsRouter = require('./routes/noots');
+
 
 var app = express();
 
@@ -23,5 +28,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/noots', nootsRouter);
+
+nunjucks.configure('views', {
+  autoescape: true,
+  express: app
+});
+
 
 module.exports = app;

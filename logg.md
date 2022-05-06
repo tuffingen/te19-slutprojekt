@@ -1,4 +1,7 @@
 ## LOGG
 
 * Jag skrev planering, ska göra figma.
-* Idag har jag gjort en figma skiss, nästa vecka ska jag börja göra en databas och sedan koda
+* Idag har börjat på en figma skiss, nästa vecka ska jag börja göra en databas och sedan koda
+* Jag har fortsatt på figma och efter fredag så ska jag ha gjort routs till databasen
+* förra lektionen gjorde jag färdigt database table och min figma skiss, idag ska jag börja koda back-end för mitt projekt.
+* Fixat CRUD, påbörjat login, nästa gång ska jag göra färdigt login, signup

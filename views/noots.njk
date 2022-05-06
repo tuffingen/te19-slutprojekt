@@ -1,0 +1,17 @@
+{% extends layout %}
+
+{% block content %}
+<form action="/noots" method="POST">
+    <div class="input-group mb-3">
+  <input type="noot" name="noot" value= "{{ meep }}" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button type="submit" class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    </div>
+    </action>
+
+    <ul>
+    {% for noot in noots %}
+        <li>{{ noot.body }}</li>
+    {%endfor%}
+    </ul>
+
+{% endblock %}
