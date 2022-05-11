@@ -4,7 +4,11 @@ const pool = require('../database');
 
 
 router.get('/', async (req, res, next) => {
-
+    console.log(req.session.name);
+    const username = req.session.name;
+    if (!username){
+        return res.redirect('/');
+    }
     await pool.promise()
         .query('SELECT * FROM iscdan_noots ORDER BY created_at DESC')
         .then(([rows, fields]) => {
