@@ -28,9 +28,8 @@ router.post('/', async (req, res, next) => {
               console.log(result);
               if (result) {
 
-                  req.session.username = username;
+                  req.session.name = username;
                   req.session.user_id = rows[0].id;
-                  console.log(req.session);
                 return res.redirect('/noots');
               } else {
               return res.send('Failed to signin');

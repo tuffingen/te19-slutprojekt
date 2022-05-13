@@ -4,7 +4,6 @@ const pool = require('../database');
 
 
 router.get('/', async (req, res, next) => {
-    console.log(req.session.name);
     const username = req.session.name;
     if (!username){
         return res.redirect('/');
