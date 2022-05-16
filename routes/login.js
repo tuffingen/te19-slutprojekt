@@ -12,7 +12,7 @@ router.get('/', function (req, res, next) {
   }
   res.render('login.njk', data);
 });
-
+//Post route för att kunna logga in
 router.post('/', async (req, res, next) => {
       const username = req.body.name;
       const password = req.body.password;
@@ -27,7 +27,6 @@ router.post('/', async (req, res, next) => {
             bcrypt.compare(password, rows[0].password, function(err,result) {
               console.log(result);
               if (result) {
-
                   req.session.name = username;
                   req.session.user_id = rows[0].id;
                 return res.redirect('/noots');
