@@ -1,12 +1,52 @@
-nav{
+nav {
     background-color: #19647E;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     height: 4rem;
 
-    ul{
+
+    .navbarlogo {
+        line-height: 1.5;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 40px;
+    }
+
+    ul {
         display: flex;
         list-style: none;
         justify-content: space-between;
         line-height: 3.5;
+        float: right;
+
+        li {
+            .signup-button {
+                background-color: transparent;
+                border: 2px solid black;
+                color: white;
+                border-radius: 4px;
+            }
+                .btn-signin {
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 0 0.25rem;
+                    padding: 0.375rem 0.75rem;
+                    color: white;
+                    background-color: #5398FF;
+                    border-radius: 4px;
+                    border: 1px solid transparent;
+                }
+
+                    .btn-signup {
+                        text-align: center;
+                        text-decoration: none;
+                        margin: 0 0.25rem;
+                        padding: 0.375rem 0.75rem;
+                        color: white;
+                        background-color: transparent;
+                        border-radius: 4px;
+                        border: 1.5px solid black;
+                }
+        }
     }
 }

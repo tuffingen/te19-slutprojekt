@@ -1,5 +1,5 @@
 body{
-    background-color: EFFFFD;
+    background-color: #EFFFFD;
 }
 .content{
     margin: auto;
@@ -16,6 +16,7 @@ body{
     }
     span{
         font-family: 'Shadows Into Light', cursive;
+        font-size: 70px;
     }
     button{
         border: none;
@@ -26,6 +27,7 @@ body{
         margin: auto;
         padding: 10px;
         color: #FFFFFF;
+        margin-bottom: 30px;
     }
     button:hover{
         background-color: #86b5fc;

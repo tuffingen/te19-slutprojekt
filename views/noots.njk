@@ -1,6 +1,7 @@
 {% extends layout %}
 
 {% block content %}
+{% include 'components/Sidebar.njk'%}
 <form action="/noots" method="POST">
     <div class="input-group mb-3">
   <input type="noot" name="noot" value= "{{ meep }}" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">

@@ -7,3 +7,4 @@
 * Fixat CRUD, påbörjat login, nästa gång ska jag göra färdigt login, signup
 * Jag har gjort färdigt post för noots/meeps, idag ska jag fixa login funktion
 * jag försökte göra login med signup men det fungerade inte, idag ska jag fixa det och börja på css
+* Idag har jag fixat massor med stilar till frontpagen och nästa lektion ska jag fortsätta och eventuellt börja på log in sidan
