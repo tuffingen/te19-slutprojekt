@@ -12,6 +12,7 @@ var loginRouter = require('./routes/login');
 var nootsRouter = require('./routes/noots');
 var signupRouter = require('./routes/signup');
 
+
 var app = express();
 
 app.use(logger('dev'));
@@ -36,6 +37,7 @@ app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/noots', nootsRouter);
 app.use('/signup', signupRouter);
+
 
 nunjucks.configure('views', {
   autoescape: true,

@@ -9,5 +9,10 @@ router.get('/', function(req, res, next) {
   res.render('index.njk', data);
 });
 
+router.post('/signout', function (req, res, next) {
+  req.session.destroy();
+  console.log(req.session);
+  res.redirect('/');
+});
 
 module.exports = router;

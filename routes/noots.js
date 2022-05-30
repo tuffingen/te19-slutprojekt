@@ -58,5 +58,35 @@ router.post('/', async (req, res, next) => {
 
 );
 
+router.get('/:id/delete', async (req, res, next) => {
+    const id = req.params.id;
+    if (isNaN(req.params.id)) {
+        res.status(400).json({
+            task: {
+                error: 'Bad request'
+            }
+        });
+    }
+    await pool.promise()
+        .query('DELETE FROM iscdan_noots WHERE id = ?', [id])
+        .then((response) => {
+            if (response[0].affectedRows === 1) {
+                res.redirect('/noots');
+
+            } else {
+                res.status(400).redirect('/noots');
+            }
+
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                meeps: {
+                    error: 'Error deleting noot'
+                }
+            })
+        });
+});
+
 
 module.exports = router;
