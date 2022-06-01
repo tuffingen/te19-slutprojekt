@@ -3,7 +3,9 @@
 Isac Danielsson , 2022-05-30
 
 ## Inledning
-Syftet var att skapa ett projekt meeps/tasks liknande projekt som kombinerar både den delen samt login delen. Man ska kunna skapa ett konto 
+Syftet var att skapa ett projekt meeps/tasks liknande projekt som kombinerar både den delen samt login delen. Man ska kunna skapa ett konto och detta kontot ska sparas på en databas. När kontot är skapat och man har loggat in så ska man kunna se allas noots och man ska även kunna skriva och lägga upp egna noots. Nootsen som man lägger upp laddas upp och sparas på en databas, de ska även gå att ta bort, helst att man bara kan ta bort sina egna. 
+
+
 Här beskriver du kortfattat arbetets syfte/mål, arbetssätt, genomförande.
 
 ## Bakgrund
