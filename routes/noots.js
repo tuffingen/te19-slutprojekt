@@ -9,7 +9,7 @@ router.get('/', async (req, res, next) => {
         return res.redirect('/');
     }
     await pool.promise()
-        .query('SELECT * FROM iscdan_noots ORDER BY created_at DESC')
+        .query('SELECT iscdan_noots.*,iscdan_users.name FROM iscdan_noots JOIN iscdan_users ON user_id = iscdan_noots.user_id ORDER BY created_at DESC;')
         .then(([rows, fields]) => {
             console.log(rows);
             res.render('noots.njk', {
@@ -30,9 +30,11 @@ router.get('/', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
     const noot = req.body.noot;
+    const user_id = req.session.user_id;
 
+   
     await pool.promise()
-        .query('INSERT INTO iscdan_noots (body) VALUES (?)', [noot])
+        .query('INSERT INTO iscdan_noots (body, user_id) VALUES (?,?)', [noot, user_id])
         .then((response) => {
             console.log(response[0].affectedRows);
             if (response[0].affectedRows === 1) {

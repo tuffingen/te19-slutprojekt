@@ -1,7 +1,7 @@
 {% extends layout %}
 {% block content %}
 {% include 'components/navbar-noots.njk' %}
-<div class="container-noots">
+<main class="container">
 
 <div class="input-noots">
 <h2>Whats on your mind?</h2>
@@ -16,7 +16,7 @@
     {% for noot in noots %}
   <div class="noot">
   <div class="noot-header">
-    username
+    {{ noot.name }}
     <a class="noot-delete float-end" href="/noots/{{ noot.id }}/delete"><i class="bi bi-dash-square"></i></a>
   </div>
   <div class="noot-body">
@@ -29,7 +29,7 @@
     {%endfor%}
     </ul>
     
+</main>
 
 
-</div>
 {% endblock %}
