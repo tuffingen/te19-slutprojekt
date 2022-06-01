@@ -1,7 +1,7 @@
 {% extends layout %}
 {% block content %}
   {% include 'components/navbar-index.njk'%}
-  <div class="container">
+  <main class="container">
     <form method='post' action="/login/">
       <div class="login">
         <label for="Username" class="form-label">Username</label>
@@ -32,5 +32,5 @@
     <div class="noaccount">
       <a href="/signup">Don't have an account? Sign up here</a>
     </div>
-  </div>
+  </main>
 {% endblock %}
