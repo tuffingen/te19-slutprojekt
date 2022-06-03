@@ -33,7 +33,7 @@ För mig handlade detta projekt mest om repetition av det vi har jobbat med tidi
 
 ## Sammanfattning
 
-
+Jag känner att jag verkligen har gynnats av denna uppgift eftersom jag fick repetera och verkligen lära mig det som vi har jobbat med tidigare. Det har inte handlat om att lära sig nya saker utan snarare att verkligen få in och förstå hela databas-task/meepsgrejen. Mitt projekt kan utvecklas på många plan, mycket på grund av att jag inte har hunnit klart och inte hunnit finslipa projektet. Det jag skulle vilja göra är en sida som heter "my noots" där man enbart kan se sina egna noots och ingen annans. Sen är det mycket småfix som behövs göras för att sidan ska kännas helt klar, jag skulle även vilja få in en sidebar på noots-sidan. 
 
 Här redovisar du dina slutsatser, erfarenheter och lärdomar. Reflektera över din produkt och dess/dina utvecklingsmöjligheter.
 Vad kan vidareutvecklas och finns det utrymme att bygga vidare på projektet.
