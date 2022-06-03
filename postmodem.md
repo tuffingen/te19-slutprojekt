@@ -19,32 +19,21 @@ Jag började med landing-pagen som bara skulle vara en stor knapp och text, knap
 Jag använde mig av sass/scss eftersom jag kan lätt strukturera koden och olika scss filer för olika delar av arbetet. Jag gjorde detta med import verktygen som gör så att jag kan importera alla scss filer på en fil som används av sidan. Några delar av sidan är dock gjorde med bootstrap, detta är inte optimalt och det var inte heller planerat men på grund av tidsbrist kände jag att det var nödvändigt för vissa saker. 
 
 När jag kände att sidan var klar i helhet (med bara några småsaker som behövs fixas) så gick jag igenom Jens checklista. Hemsidan provades på två olika webbläsare samt på telefon, den fungerade i båda det var bara en knapp som såg konstig ut på telefon om man hade en väldigt smal telefon. Jag validerade alla mina nunjucksfiler och även scss filer, de uppstod några problem men de fixade jag. 
+Sidan testades med wave och den tyckte jag hade för lågt kontrast på två ställen.
 
 
-
-
-
-Redovisa arbetets olika delar. Så att läsaren förstår vad du gjort och hur.
-
-Använd gärna bilder för att illustrera.
-
-För att lägga till bilder i markdown. Bilderna kan du ladda upp med Git som vanligt, länka dem med url eller filnamnet.
-
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-
-
-![NTI Gymnasiet Umeå Logo](https://raw.githubusercontent.com/jensnti/Webbprojekt/master/mallar/nti_logo_white_umea.svg)
 
 ## Positiva erfarenheter
 
-Här beskriver du vad som har gått bra i ditt projekt och analyserar varför. Hur ska du upprepa framgångarna.
+För mig handlade detta projekt mest om repetition av det vi har jobbat med tidigare plus att få jobba lite med css. Jag ville repetera det vi jobbade med innan så jag jag skulle första allt bättre och så att det blir lättare i framtiden. Jag tycker att jag har fått en mycket bättre förståele om hur hela databas/routs delen fungerar. Jag har även fått jobba med css som jag tycker är ganska roligt och eftersom det var så längesen jag jobbade med det sist så var det väldigt nyttigt att få jobba med det. Det har varit kul att jobba med sass/scss, jag har aldrig provat strukturerat koden på det sätt som jag gjorde innan. Jag lärde mig att det finns ganska mycket man kan göra med sass som jag inte har provat än.
 
 ## Negativa erfarenheter
 
-Här beskriver du det som du anser har gått mindre bra med ditt projekt och analyserar hur du kan undvika detta i framtida projekt.
+Även fast jag har en mycket bättre förståelse av hur den här delen fungerar så märker jag att min kunskap och förståelse sträcker inte sig långt. Jag kan skriva och förstå det vi har jobbat med och det som min kod innehåller. Men jag har väldigt svårt om jag ska göra något helt eget eller något som är annorlunda men påminner om det vi jobbar med nu, t.ex om jag skulle göra en filmdatabas så kan jag inte tänka mig hur det skulle gå till. Jag hade några svårigheter med JOIN, det uppstod ett problem som jag inte hunnit fixa än. Problemet är att den laddar upp en noot för varje användare när jag postar på sidan. Annars har det flytit på väldigt bra eftersom vi har jobbat med detta ett bra tag nu. Jag insåg dock hur svårt jag tycker det är när det kommer till saker som vi inte jobbat med tidigare. 
 
 ## Sammanfattning
+
+
 
 Här redovisar du dina slutsatser, erfarenheter och lärdomar. Reflektera över din produkt och dess/dina utvecklingsmöjligheter.
 Vad kan vidareutvecklas och finns det utrymme att bygga vidare på projektet.
