@@ -48,7 +48,9 @@ ul{
 }
 .noot-delete{
     color: red;
-    :hover{
-        color: red;
-    }
+
+}
+
+.noot-delete:hover{
+    color: rgb(255, 129, 129);
 }

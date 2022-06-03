@@ -5,6 +5,7 @@ const pool = require('../database');
 
 router.get('/', async (req, res, next) => {
     const username = req.session.name;
+    
     if (!username){
         return res.redirect('/');
     }
@@ -21,7 +22,7 @@ router.get('/', async (req, res, next) => {
         .catch(err => {
             console.log(err);
             res.status(500).json({
-                meeps: {
+                noots: {
                     error: 'Error getting notts'
                 }
             })
@@ -29,37 +30,25 @@ router.get('/', async (req, res, next) => {
 });
 
 router.post('/', async (req, res, next) => {
-    const noot = req.body.noot;
+    const body = req.body.noot;
     const user_id = req.session.user_id;
-
-   
     await pool.promise()
-        .query('INSERT INTO iscdan_noots (body, user_id) VALUES (?,?)', [noot, user_id])
-        .then((response) => {
-            console.log(response[0].affectedRows);
-            if (response[0].affectedRows === 1) {
-                res.redirect('/noots');
-            } else {
-                res.status(400).json({
-                    meeps: {
-                        error: 'Invalid noot'
-                    }
-                });
-            }
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json({
-                meeps: {
-                    error: 'Error posting noot'
-                }
-            })
-        });
-}
-    // res.json(req.body);
 
-);
-
+    .query('INSERT INTO iscdan_noots (body,user_id) VALUES (?,?)', [body,user_id])
+    .then((response) => {
+        console.log(response);
+        if (response[0].affectedRows === 1) {
+            res.redirect('/noots');
+        } else {
+            res.status(400).redirect('/noots');
+        }
+    })
+    .catch(err => {
+        console.log(err);
+        res.redirect('/noots');
+    });
+  });
+  
 router.get('/:id/delete', async (req, res, next) => {
     const id = req.params.id;
     if (isNaN(req.params.id)) {
@@ -83,7 +72,7 @@ router.get('/:id/delete', async (req, res, next) => {
         .catch(err => {
             console.log(err);
             res.status(500).json({
-                meeps: {
+                noots: {
                     error: 'Error deleting noot'
                 }
             })

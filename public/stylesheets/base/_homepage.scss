@@ -12,23 +12,25 @@ body{
     }
     ul{
         list-style: none;
-        padding: 10px
+        padding: 10px;
+        line-height: 3;
     }
     span{
         font-family: 'Shadows Into Light', cursive;
         font-size: 70px;
     }
-    button{
+    .Signin-noots{
         border: none;
         border-radius: 6px;
         background-color: #5398FF;
         width: 50%;
         font-size: 40px;
         margin: auto;
-        padding: 10px;
+        padding: 15px 40px 15px 40px;
         color: #FFFFFF;
-        margin-bottom: 30px;
+        text-decoration: none;
     }
+
     button:hover{
         background-color: #86b5fc;
         transition: 0.15s;
